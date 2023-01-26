@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <hr>
+    Создать страницу, которая спрашивает имя у пользователя и выводит его с помощью функции
+    <br>
+
+    <script>
+        name = prompt('Введите ваше имя ', '');
+        let username = output(name)
+
+        alert(output(name))
+        function output(x) {
+            return 'Ваше имя:' + name + '!';
+        }
+    </script>
+
+
+
+    <br><br><br><br>
+    <hr>
+    <br><br><br><br>
+    Доделать калькулятор из лекции, сделать 4 действия, при делении должен выводиться текст ошибки. Код можно взять в
+    материалах начальный.
+    <p>
+    <h1>Калькулятор</h1>
+    <input type="text" id="val1" value="5">
+    <button onclick="oper('+')">+</button>
+    <button onclick="oper('-')">-</button>
+    <button onclick="oper('*')">*</button>
+    <button onclick="oper('/')">/</button>
+    <input type="text" id="val2" value="10">
+    =
+    <input type="text" id="val3" value="0" readonly>
+    </p>
+
+    <!--  <button onclick="test(7)">test</button> -->
+
+
+    <script>
+
+        let Result = 0;
+
+        function test(x) {
+            alert(x);
+        }
+        function operation() {
+            var val1 = parseFloat(document.getElementById("val1").value);
+            var val2 = parseFloat(document.getElementById("val2").value);
+            const val3 = val1 + val2;
+            document.getElementById("val3").value = val3
+
+        }
+
+        function oper(x) {
+            var val1 = parseFloat(document.getElementById("val1").value);
+            var val2 = parseFloat(document.getElementById("val2").value);
+
+            switch (x) {
+                case '+':
+                    var val3 = val1 + val2;
+                    break;
+                case '-':
+                    var val3 = val1 - val2;
+                    break;
+                case '*':
+                    var val3 = val1 * val2;
+                    break;
+                case '/':
+                    var val3 = val1 / val2;
+                    break;
+                default:
+                    alert("Нет таких значений");
+            }
+            document.getElementById("val3").value = val3
+        }
+
+    </script>
+
+</body>
+
+
+</html>

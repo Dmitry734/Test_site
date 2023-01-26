@@ -1,0 +1,72 @@
+h1 {
+    text-align: left;
+}
+
+
+.history {
+    align-content: center;
+    background-color: rgb(148, 218, 50);
+    background: url(https://oratorprofi.ru/800/600/https/panoramaacuicola.com/wp-content/uploads/2017/06/18766704_1347178258728577_6713091692255817322_o.jpg) no-repeat center;
+    padding: 5px;    
+}
+
+
+.statistic {
+    align-content: center;
+    background-color: rgb(148, 218, 50);
+    background: url(../images/Global.png) no-repeat center;
+    padding: 5px;    
+}
+hr {
+    width: 100%;
+    display: flex;
+    color: rgba(10, 2, 2, 0.886);
+    border-width: 1mm;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 1s;
+    
+}
+
+li:hover {
+    background-color: rgb(204, 233, 58);
+}
+
+#menu3 {
+    color: red;
+}
+
+.secondp {
+    color: blue;
+}
+
+footer {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.whitetext {
+    color: rgb(107, 196, 128);
+    font-family: "Tahoma";
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 120%;
+    background-color: yellow;
+    
+}
